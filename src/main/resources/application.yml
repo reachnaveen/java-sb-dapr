@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+dapr:
+  # If running with Dapr sidecar on a non-default port:
+  # httpPort: 3501
+
+spring:
+  main:
+    allow-bean-definition-overriding: true

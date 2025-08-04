@@ -1,0 +1,16 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: servicebus-pubsub
+spec:
+  type: pubsub.azure.servicebus
+  version: v1
+  metadata:
+    - name: connectionString
+      value: "${SERVICEBUS_CONNECTION_STRING}"
+    - name: consumerID
+      value: "${SERVICEBUS_QUEUE_NAME}"
+    - name: topic
+      value: "orders"
+    - name: subscription
+      value: "${SERVICEBUS_SUBSCRIPTION_NAME}"
