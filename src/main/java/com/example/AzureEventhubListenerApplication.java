@@ -6,7 +6,7 @@ public class AzureEventhubListenerApplication {
 
     @GetMapping("/health")
     public String healthCheck() {
-        return "Service is running";
+        return "Service is running.....";
     }
 
     public static void main(String[] args) {
